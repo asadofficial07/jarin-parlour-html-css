@@ -98,9 +98,11 @@ header{
     display: flex;
     gap: 30px;
     margin: 50px 0px;
+    width: 100%;
 }
 .service{
     padding: 40px;
+    width: 100%;
 }
 .service:hover{
     box-shadow: 10px 10px 15px 15px #8d7b7b3d;
@@ -285,30 +287,86 @@ color: #F63E7B;
     padding: 50px 300px;
 }
 .form{
-    margin-top: 30px;
-    display: grid;
-    grid-template-columns: repeat(2,1fr);
+    margin: 30px auto;
     margin-bottom: 20px;
+    width: 75%;
+}
+.flex{
+    display: flex;
+    gap: 50px;
 }
 .form input{
-    width: 360px;
+
+    width: 100%;
     padding: 20px 20px;
     margin-bottom: 25px;
     border: none;
     border-radius: 5px;
     font-size: 18px;
-    
-}
-.form input:nth-child(5){
-    padding: 50px ;
-    text-align: left;
-    
+    box-sizing: border-box;
 }
 
+.textarea {
+    width: 100%;
+    height: 150px;
+    padding: 12px 20px;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    background-color: #f8f8f8;
+    resize: none;
+  }
+.footers{
+    background-color: #F63E7B;
+    color: white;
+}
+.fixed{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-items: center;
+}
+.footer-title{
+    margin: 20px 0px;
+    padding-top: 30px;
+    
+}
+.location{
+width: 30%;
+height: 100%;
+display: flex;
+justify-content: center;
+padding: 50px 20px;
+}
 
-
-
-
+.company{
+    width: 20%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    grid-row-gap: 10px;
+}
+.company a{
+    text-decoration: none;
+    color: white;
+    text-transform: capitalize;
+}
+.quick-links{
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+    width: 20%;
+    height: 100%;
+}
+.quick-links a{
+    text-decoration: none;
+    color: white;
+    text-transform: capitalize;
+}
+.about-us{
+    width: 30%;
+    height: 100%;
+}
 
 
 /* Extra small devices (phones, 600px and down) */
